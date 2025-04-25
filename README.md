@@ -1,8 +1,47 @@
-# FacialDetection
+# 🎥 Real-Time Face Detection with OpenCV and Dlib
 
-## Author: Garrett Hayes
+This project demonstrates real-time face detection using OpenCV and Dlib in Python. It captures video from your webcam, detects faces in each frame, and displays bounding boxes with labels for each detected face.
 
-This is an application that uses the opencv and numpy libraries as well as dlib to detect the number of faces in the webcam.
+---
 
-### NOTE: 
-This application WILL NOT work unless the opencv, numpy and dlib libraries are installed. The dlib library also only works with Python 3.9 or below!
+## 📸 Features
+
+- ✅ Real-time video capture from your webcam
+- ✅ Face detection using Dlib's frontal face detector
+- ✅ Bounding boxes drawn around each face
+- ✅ Sequential labeling of detected faces
+- ✅ Mirror-like view with horizontal flip
+- ✅ Press `q` to quit the app
+
+---
+
+## 🛠️ Requirements
+
+Make sure you have Python installed, then install the required libraries:
+
+```bash
+pip install opencv-python numpy dlib
+```
+
+
+## How to Run 
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/face-detection-opencv-dlib.git
+cd face-detection-opencv-dlib
+```
+
+2. Run the script:
+```bash
+python face_detect.py
+```
+
+### How it Works
+- Uses OpenCV's VideoCapture(0) to access your webcam
+- Flips the frame horizontally for a natural selfie view
+- Converts the frame to grayscale for faster processing
+- Detects faces using dlib.get_frontal_face_detector()
+- Draws green rectangles around detected faces
+- Labels each face with a number using cv2.putText()
+
