@@ -28,13 +28,13 @@ pip install opencv-python numpy dlib
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/face-detection-opencv-dlib.git
-cd face-detection-opencv-dlib
+git clone https://github.com/bridgeshayes/Face-Detection.git
+cd Face-Detection
 ```
 
 2. Run the script:
 ```bash
-python face_detect.py
+python faceDet.py
 ```
 
 ### How it Works
